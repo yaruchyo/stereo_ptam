@@ -84,4 +84,10 @@ RUN pip install --upgrade pip
 COPY slam/requirements.txt "$HOME"
 RUN pip install -r requirements.txt
 
+RUN apt install gedit -y
+
+RUN curl -L https://download.jetbrains.com/python/pycharm-community-2022.1.1.tar.gz  | tar -xvz
+
+RUN echo "alias pycharm='pycharm-community-2022.1.1/bin/pycharm.sh'" >> /root/.bashrc
+
 CMD ["/bin/bash"]

@@ -1,7 +1,7 @@
 services:
-    slam-python:
-        image: slam
-        container_name: slam
+    slam-main:
+        image: slam-main
+        container_name: slam-main
         tty: true
         #network_mode: host
         devices:
