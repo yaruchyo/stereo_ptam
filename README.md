@@ -27,6 +27,10 @@ As stated in the [S-PTAM paper](http://webdiis.unizar.es/~jcivera/papers/pire_et
 * [g2o](https://github.com/uoip/g2opy) <sub>(python binding of C++ library [g2o](https://github.com/RainerKuemmerle/g2o))</sub> for optimization
 * [pangolin](https://github.com/uoip/pangolin) <sub>(python binding of C++ library [Pangolin](http://github.com/stevenlovegrove/Pangolin))</sub> for visualization
 
+## Docker Implementation
+Using Dockerfile and docker-compose there is an option to build the required system inside the container using ubuntu 20.04
+
+
 ## Usage
 `python sptam.py --dataset kitti --path path/to/your/KITTI_odometry_dataset/sequences/00`  
 or  
